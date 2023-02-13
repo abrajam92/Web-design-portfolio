@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Sociedad Center Juvenil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+    
+<body>
+    
+    <a href="index.html">
+        <img id="simbolo-logo" src="../imagenes/logoPrincipal.webp" alt="logo">
+        <h1 id="Encabezado-pag">SOCIEDAD CENTER JUVENIL</h1>
+    </a>
+    
+    <div class="dropdown">
+        
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="../imagenes/Menu-picked.svg" alt="btn de menu"></label>
+        
+        <ul id="NavBar">
+            <li><a href="../html/index.html">Inicio</a></li>
+            <li><a href="#Nosotros">Nosotros</a></li>
+            <li><a href="#Proyectos">Proyectos</a></li>
+            <li><a href="#Involucrarse">Involucrarse</a></li>
+            <li><a href="#Donar">Donar</a></li>
+            <li id="env-msj"><a href="#enviar-mensaje"><img src="../imagenes/env-msj.svg" alt="Sobre">Enviar mensaje</a></li>
+        </ul>
+    </div>
+    
+    <!-- Script para que la barra se acomode !-->
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the navbar
+        var navbar = document.getElementById("NavBar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+    
+    <img src="../imagenes/Foto1-c-transp.png" alt="foto de niños" id="portadaNinios">
+    
+    <div class="margin-container" id="Nosotros">
+        
+        <div class="header-cont">
+            <img src="../imagenes/Nosotros.svg" alt="icono-nosotros">
+            <!-- El header de cada sección lo coloco fuera para
+                 del contenedor para que no se afecte por el borde punteado !-->
+            <h3 class="header-de-seccion">Nosotros</h3>
+        </div>
+        
+        <div class="main-container">
+
+            <div class="secondary-container" style="width: 100%">
+
+                <p><em>Sociedad Center Juvenil</em> es una asociación civil sin fines de lucro y apartidista, fundada en el 2011 en el estado de Puebla, es conformada por profesionistas de Puebla y México, interesados y preocupados por los asuntos de carácter social en el país y el mundo.</p>
+                <p>Adquiriendo un compromiso con el trabajo humanitario para beneficiar al mayor número de personas posibles.</p>
+
+            </div>
+
+            <div class="secondary-container">
+
+                <h4>Misión</h4>
+                <p>Combatir la pobreza y el rezago social a través de proyectos y actividades de alto impacto, favoreciendo a la población que se encuentra en pobreza extrema o vulnerable del estado y el país.</p>
+
+            </div>
+
+            <div class="secondary-container">
+
+                <h4>Visión</h4>
+                <p>Ser una organización líder a nivel nacional e internacional en el desarrollo e implementación de proyectos y programas de asistencia social que aporten mejores condiciones de vida a la sociedad.</p>
+            </div>
+
+            <div class="secondary-container">
+
+                <h4>Valores</h4>
+                <ul>
+                    <li>Amor</li> 
+                    <li>Solidaridad</li> 
+                    <li>Honestidad</li> 
+                    <li>Rectitud</li> 
+                    <li>Servicio</li> 
+                    <li>Perseverancia</li> 
+                    <li>Transparencia</li>
+                </ul>
+            </div>
+
+            <div class="secondary-container">
+
+                <h4>Objetivos</h4>
+                <p>Regirnos siempre con: Transparencia y honestidad.</p>
+                <p>Promover actividades: Educativas, deportivas y culturales.</p>
+                <p>Promover ayuda: Hospitales, orfanatos, instituciones.</p>
+            </div>
+
+            <div class="secondary-container" style="width: 100%">
+
+                <h4>Nuestras filiales</h4>
+
+                <ul style="float: left">
+                    <li>Brasil</li>
+                    <li>Cuba</li>
+                    <li>Puebla</li>
+                    <li>Oaxaca</li>
+                    <li>Veracruz</li>
+                    <li>Tlaxcala</li>
+                </ul>
+
+                <img src="../imagenes/Mapa.svg" alt="mapa de filiales" style="display: block; float: right; width: 70%; margin-top: 0; margin-left: auto; margin-right: auto">
+
+            </div>
+
+
+            <div class="secondary-container" id="seccion-ultimo-proyecto">
+
+                <h4>Último proyecto</h4>
+                <img src="../imagenes/Inicio-ultimo-proyectos.webp" alt="últimos proyectos">
+                <p>Gracias a tu apoyo se cumplió con el objetivo de que niños visitaran el cine, a través de un compromiso y trabajo en equipo, disfrutaron de la función en compañía de sus familias y seres queridos. </p>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="margin-container" id="Proyectos">
+        
+        <div class="header-cont">
+            <img src="../imagenes/Proyectos.svg" alt="icono-proyectos">
+            <!-- El header de cada sección lo coloco fuera para
+                del contenedor para que no se afecte por el borde punteado !-->
+            <h3 class="header-de-seccion">Proyectos</h3>
+        </div>
+            
+            
+        <div class="main-container" id="secc-proyectos">
+
+            <div class="secondary-container">
+                <h4>Alimentando corazones</h4>
+                <img src="../imagenes/Proyectos-alimentando-corazones.webp" alt="img alimentando corazones">
+                <p>Consiste en llevar alimentos a través de despensas a personas que habitan en zonas marginales y con índice de pobreza.</p>
+            </div>
+
+            <div class="secondary-container">
+                <h4>Regalando sonrisas</h4>
+                <img src="../imagenes/Proyectos-regalando-sonrisas.webp" alt="img regalando sonrisas">
+                <p>Consiste en llevar alegría a través de juguetes y esperanza a través de interacción con los niños de todo el país.</p>
+            </div>
+
+            <div class="secondary-container">
+                <h4>Transformando vidas</h4>
+                <img src="../imagenes/Proyectos-transformando-vidas.webp" alt="img transformando vidas">
+                <p>Consiste en gestionar y adquirir para el solicitante de escasos recursos que necesitan artículos ortopédicos como: Silla de Ruedas, Bastones, Andaderas, Lentes, Aparatos Auditivos, Pañales.</p>
+            </div>
+
+            <div class="secondary-container">
+                <h4>Activando vidas</h4>
+                <img src="../imagenes/Proyectos-activando-vidas.webp"  alt="img activando vidas">
+                <p>Consiste en fomentar el desempeño con actividad física de manera permanente y así contribuir a una sana salud.</p>
+            </div>
+
+            <div class="secondary-container">
+                <h4>Concientizando vidas</h4>
+                <img src="../imagenes/Proyectos-concientizando-vidas.webp" alt="img concientizando vidas">
+                <p>Consiste en informar mediante: Conferencias, Seminarios, Talleres a la sociedad en su conjunto en los temas actuales y de interés común.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="margin-container" id="Involucrarse">
+        
+        <div class="header-cont">
+            <img src="../imagenes/Involucrarse.svg" alt="icono-involucrarse">
+            <!-- El header de cada sección lo coloco fuera para
+                 del contenedor para que no se afecte por el borde punteado !-->
+            <h3 class="header-de-seccion" >Involucrarse</h3>
+        </div>
+
+        <div class="main-container" id="secc-involucrarse">
+
+            <div class="secondary-container">
+                <h4>Voluntario</h4>
+                <img src="../imagenes/Involucrarse-voluntario.webp" alt="img involucrarse voluntario">
+                <p>Sé un voluntario y forma parte de nuestros colaboradores, con tu ayuda llegaremos a más personas, solo tienes que tener voluntad y compromiso, invierte tu tiempo en algo realmente benéfico y contribuye a un mundo mejor mediante el trabajo en equipo.</p>
+            </div>
+            <div class="secondary-container">
+                <h4>Estudiantes</h4>
+                <img src="../imagenes/Involucrarse-estudiantes.webp" alt="img involucrarse estudiantes">
+                <p>Si eres estudiante y te preocupa el bienestar de los demás, realiza tu Servicio Social con nosotros. Desarrolla actividades e iniciativas que contribuyan a una mejor calidad de vida de los diferentes grupos de personas a quien van dirigidos los programas.</p>
+            </div>
+            <div class="secondary-container">
+                <h4>Educadores</h4>
+                <img src="../imagenes/Involucrarse-educadores.webp" alt="img involucrarse educadores">
+                <p>Comparte tus conocimientos con quien realmente lo necesita, para garantizar un mejor aprendizaje, a través de la formación académica y así combatir los problemas que afectan la población más vulnerable por falta de oportunidades.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="margin-container" id="Donar">
+        
+        <div class="header-cont">
+            <img src="../imagenes/Donar.svg" alt="icono-donar">
+            <!-- El header de cada sección lo coloco fuera para
+                 del contenedor para que no se afecte por el borde punteado -->
+            <h3 class="header-de-seccion">Donar</h3>
+        </div>
+
+        <div class="main-container">
+            <div class="secondary-container" style="width:100%">
+                <p>En Sociedad Center Juvenil A.C. ninguna persona recibe remuneración económica por las actividades que realiza, todo nuestro trabajo es voluntario, honorifico y sin fines de lucro.</p>
+                <p>Por lo tanto las donaciones y aportaciones de personas físicas y morales son muy importantes, pues nos permiten llevar a cabo nuestros proyectos sociales. Así que te invitamos a participar con nosotros y convertirte en donante, solo tienes que hacer la aportación que consideres pertinente.</p>
+                <p>Tu contribución nos ayuda a crecer y seguir multiplicando nuestros proyectos en todo el territorio nacional e internacional.</p>
+                <p>Gracias por ser parte de esta historia.</p>
+                <div id="marco-donar">
+                    <p style="margin-bottom: 0.8em">Agradecemos su donación:</p>
+                    <p><b>Bancomer: 0074 3750 11 0104670841</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="margin-container" id="enviar-mensaje">
+    
+        <div class="header-cont">
+            <img src="../imagenes/Enviar-mensaje.svg" alt="icono-involucrarse">
+            <!-- El header de cada sección lo coloco fuera para
+                 del contenedor para que no se afecte por el borde punteado !-->
+            <h3 class="header-de-seccion" >Enviar mensaje</h3>
+        </div>
+        
+        <div class="main-container">
+            
+            <p style="margin-bottom: 1em">A través de la siguiente forma, puede mandar un mensaje directo a nosotros, por favor rellene todos los datos para poder comunicarnos de vuelta con usted:</p>
+            <form id="forma-enviar-mensaje">
+                <input type="text" id="fnombre" placeholder="Su nombre:">
+                <input type="text" id="femail" placeholder="su email:">
+                <input type="text" id="fasunto" placeholder="asunto:">
+                <textarea id="fmensaje" name="mensaje" placeholder="Escriba su mensaje..."></textarea>
+                <input type="submit">
+            </form>
+        </div>
+        
+    </div>
+    
+    <div id="footer">
+
+        <div class="segmento-footer">
+            <h5>Llámenos</h5>
+            <p>22-24-26-17-13</p>
+        </div>
+
+        <div class="segmento-footer">
+            <h5>Encuéntrenos</h5>
+            <p>Campos Elíseos #10</p>
+            <p>Colonia Villa Las flores </p>
+            <p>Puebla, Pue.</p>
+        </div>
+
+        <div class="segmento-footer">
+            <h5>Escríbanos</h5>
+            <a href="mailto:Cerca_de_ti@gmail.com"><p>Cerca_de_ti@gmail.com</p></a>
+        </div>
+
+        <div class="segmento-footer">
+            <a href="https://www.facebook.com/sociedadcentrojuvenil.ac"><img src="../imagenes/Recurso-1.svg" alt="facebook icon"></a>
+        </div>
+        
+        <div class="segmento-footer">
+            <h5>Navegación</h5>
+            <div id="nav-on-footer">
+                <a href="index.html">Inicio</a>
+                <a href="#Nosotros">Nosotros</a>
+                <a href="#Proyectos">Proyectos</a>
+                <a href="#Involucrarse">Involucrarse</a>
+                <a href="#Donar">Donar</a>
+                <a href="#enviar-mensaje">Enviar mensaje</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>

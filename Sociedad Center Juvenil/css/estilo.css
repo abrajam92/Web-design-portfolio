@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
+
+*{
+    
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 500; 
+    margin: 0;
+}
+
+body{}
+
+a, a:hover, a:visited, a:active{text-decoration: none;}
+
+#NavBar{
+    
+    z-index: 99;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: #e34040;
+        
+    /* Alineación horizontal */
+    justify-content: center;
+    /* Alineación vertical */
+    align-items: center;
+    
+    margin: 0;
+    padding: 0;
+    
+    border-top: 2pt solid #e34040;
+    border-bottom: 2pt solid #e34040;
+    margin-bottom: 0.7em;
+    box-shadow: 2pt 2pt 3pt rgba(0, 0, 0, 0.35);
+
+    width: 100%;
+    /*max-width: 760pt;*/
+    height: 2.6em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2pt;
+}
+
+#NavBar>li>a{
+    
+    display: block;
+    padding: 1em 14pt;
+    height: 100%;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-kerning: normal;
+    font-weight: 500;
+    font-size: 16pt;
+}
+
+#env-msj>a>img{
+    
+    width: 22pt;
+    margin-right: 0.8em;
+    margin-left: 1em;
+}
+
+#env-msj{
+    
+    margin-left: 1.5em;
+    border-left: 1pt solid white;
+}
+
+#NavBar>li>a:hover{background-color: rgba(65, 65, 65, 0.21);}
+#NavBar>li>a.active{background-color: rgba(65, 65, 65, 0.21);}
+
+.dropdown>input,.dropdown>label{display: none;}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content{
+    
+  padding-top: 60px;
+}
+
+@media only screen and (max-width:900px){
+    
+    .dropdown>input{display: none;}
+    
+    .dropdown>label{
+        
+        z-index: 102;
+        display: inline-flex;
+        position: fixed;
+        top: 20pt;
+        right: 30pt;
+    }
+    
+    .dropdown>label img{
+        
+        z-index: 101;
+        width: 50pt;
+        height: auto;
+        text-shadow: 
+    }
+
+    #NavBar{
+    
+        width: 100%;
+        left: -150%;
+        right: auto;
+        top: 0;
+        
+        position: fixed;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+        transition: 0.5s;
+        border-radius: 0;
+        border: none;
+        padding: 3em 0 4em 0em;
+        background-color: #801e1e;
+    }
+
+    #NavBar>li>a{
+        
+        font-size: 20pt;
+        flex-basis: 100%;
+        flex-grow: 3;
+        padding: 8pt 0 8pt 3rem;
+        text-align: left;
+        background-color: #e34040;
+    }
+    
+    #NavBar>li{
+        
+        width: 100%;
+        text-align: center;
+    }
+    
+    #btn-menu:checked ~ #NavBar{
+        
+        left: 0;
+        position: fixed;
+        z-index: 100;
+        display: flex;
+        transition: 0.5s;
+    }
+    
+    #env-msj>a>img{
+        
+        clear: left;
+        float: right;
+        width: 30pt;
+        margin-right: 2em;
+        margin-left: 0;
+}
+
+    #env-msj{
+
+        margin-left: 0;
+        border: none;
+    }
+    
+    #env-msj>a{ border-top: 1pt solid white;}
+}
+
+#simbolo-logo {
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+    display: flex;
+    align-content: center;
+    width: 70pt;
+    height: auto;
+}
+
+#Encabezado-pag {
+    
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    
+    text-align: center;
+    
+    font-weight: 700;
+    font-size: 34pt;
+    text-shadow: white 3pt 6pt 5pt;
+    z-index: 3;
+}
+
+@media only screen and (max-width:800px){
+
+    #simbolo-logo{margin-top: 26pt;}
+    #Encabezado-pag{ font-size: 28pt; margin-bottom: 20pt;}
+}
+
+#portadaNinios{
+    
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 18pt;
+    display: block;
+    width: 100%;
+    max-width: 680pt;
+    height: auto;
+}
+
+@media only screen and (max-width:800px){
+
+    #portadaNinios{width: 100%;}
+}
+
+#Nosotros{
+    
+    margin-top: 5em;
+}
+
+.margin-container{
+    
+    box-sizing: border-box;
+    border: 1pt solid #d4d4d4;
+    align-self: center;
+    justify-content: center;
+    width: 65%;
+    max-width: 660pt;
+    margin: 2em auto 7em auto;
+    background-color: white;
+}
+
+.header-cont{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 5em 0 0.5em;
+}
+
+.header-cont>img{
+    
+    align-self: flex-start;
+    display: block;
+    padding: 0;
+    margin: 0 0 1em 6%;
+    width: 50pt;
+}
+
+.header-de-seccion{
+    
+    align-self: flex-start;
+    display: block;
+    font-weight: 700;
+    font-size: 28pt;
+    text-align: left;
+    color: #e34040;
+    margin: 0 0 1.1em 0.4em;
+    padding: 0 0.4em 0 0.1em;
+    border-bottom: 2pt solid #e33f3f;
+}
+
+.main-container{
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    align-items: center;
+                
+    padding: 3%;
+    padding-top: 0;
+    
+    /* background-color: #f4f4f4; */
+}
+
+.secondary-container{
+   
+    width: 44%;
+    height: auto;
+    margin: 0;
+    padding: 2% 3%;
+    align-self: baseline;
+}
+
+/* Header de subsección */
+.secondary-container>h4{ 
+
+    box-sizing: border-box;
+    font-size: 16pt;
+    color: #5c7070;
+    background-color: #f5f5f5;
+    border-left: 4pt solid #e34040;
+    font-weight: 700;
+    font-family: 'Roboto condensed', sans-serif;
+    padding: 3pt 0 5pt 12pt;
+    margin: 10pt 0 15pt 0;
+}
+
+.secondary-container>p, .secondary-container>ul>li, .secondary-container>ul{ 
+
+    text-align: left;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    list-style-type: disc;
+    list-style-position: inside;
+    left: 0;
+    color: #404040;
+}
+
+.secondary-container>p{margin: 0 0 1.2em 0;}
+
+#seccion-ultimo-proyecto{
+    
+    margin-top: 18pt;
+    align-self: baseline;
+    flex-basis: 100%;
+}
+
+/*Imagen de niños llevados al cine*/
+#seccion-ultimo-proyecto>img{ 
+
+    float: right;
+    width: 43%; 
+    height: auto;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    padding: 6pt;
+    padding-bottom: 32pt;
+    border-radius: 3pt;
+    border: 1pt solid rgba(0, 0, 0, 0.26);
+    box-shadow: 0 0 5pt rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width:800px){
+    
+    .margin-container{width: 98%;}
+    .main-container{border: none;}
+    .secondary-container{width: 100%;}
+}
+
+/* Imágenes de proyecto */
+#secc-proyectos>.secondary-container>img{
+    
+    float: left;
+    width: 55%;
+    height: auto;
+    margin-right: 6%;
+    border-radius: 15%;
+}
+
+@media only screen and (max-width:800px){
+    
+    #secc-proyectos>.secondary-container>img{
+        
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 200pt;
+    }
+}
+
+#secc-involucrarse>.secondary-container>img{
+    
+    width: 100%;
+    
+    padding: 6pt;
+    padding-bottom: 32pt;
+    border-radius: 3pt;
+    border: 1pt solid rgba(0, 0, 0, 0.26);
+    box-shadow: 0 0 5pt rgba(0, 0, 0, 0.5);
+}
+
+#marco-donar{
+    
+    margin-top: 2em;
+    box-sizing: border-box;
+    border: 3pt dotted #838383;
+    padding: 1.4em 1em;
+    background-color: #ffe65c;
+    box-shadow: 0 2pt 6pt rgba(0, 0, 0, 0.39);
+}
+
+#marco-donar p{
+    
+    font-size: 16pt;
+    font-weight: 400;
+    text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #e34040;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #801e1e;
+}
+
+#fmensaje{
+    
+    resize: none;
+    height: 12em;
+    overflow: scroll;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 3em 0 0;
+    padding: 2em 0 4em;
+    background-color: #3f5050;
+    color: white;
+}
+
+.segmento-footer{
+
+    margin: 0 12pt;
+    padding-bottom: 40pt;
+    text-align: center;
+    flex-grow: 0;
+}
+
+.segmento-footer>h5{font-weight: 500; font-size: 15pt; margin-bottom: 14pt;}
+.segmento-footer>p, .segmento-footer>a>p{font-weight: 300; font-size: 11pt; margin: 0; line-height: 16pt;}
+
+.segmento-footer>a{color: white;}
+.segmento-footer>a>img{width: auto; height: 18pt; padding-top: 22pt;}
+
+.segmento-footer>a>img:hover{/*Cambiar imagen a gris en hover (investigar o reemplazar con otra imagen)*/}
+
+.segmento-footer a:hover, #nav-on-footer a:hover{text-decoration: underline;}
+
+#nav-on-footer, #nav-on-footer>a{
+    
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 300;
+    line-height: 16pt;
+    font-size: 11pt;
+}
+
+@media only screen and (max-width: 800px){
+    
+    #footer{
+        
+        width: 100%;
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 60pt;
+    }
+    
+    .segmento-footer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .segmento-footer>a>p, .segmento-footer>p, #nav-on-footer>a{
+        font-size: 13pt;
+        line-height: 18pt;
+        text-align: center;
+    }
+    
+    .segmento-footer>h5{
+        font-size: 20pt;
+        margin-top: 40pt;
+    }
+    
+    .segmento-footer>a>img{
+        
+        margin-top: 40pt;
+        height: 26pt;
+    }
+}
