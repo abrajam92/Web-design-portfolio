@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cuentos</title>
+    <link rel="stylesheet" href="../css/cuentos.css">
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+            myFunction()
+        };
+
+        // Función para vista de progreso de barra
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+        // Funciones para boton de ir hacia arriba
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</head>
+
+<body>
+
+    <!--Encabezado-------------------->
+
+    <div id="header">
+        <img src="../Logo/Cuentos-para-leer-en-una-tarde-lluviosa-LOGO.svg">
+    </div>
+
+    <!--Barra de navegación----------->
+
+    <div class="navbar">
+        <a class="inicio" href="../html/index.html">Inicio</a>
+        <div class="dropdown">
+            <button class="dropbtn"> Cuentos <img src="../img/Flecha.svg" style="width:10px"></button>
+            <div class="dropdown-content">
+                <a href="../html/La-cuesta-de-las-comadres.html">La cuesta de las comadres.</a>
+                <a href="../html/La-barrica-del-amontillado.html">La barrica del amontillado.</a>
+                <a href="../html/El-almohadon-de-plumas.html">El almohadón de plumas.</a>
+                <a href="../html/Un-dia-perfecto-para-el-pez-platano.html">Un día perfecto para el pez plátano.</a>
+                <a href="../html/El-caballero-sobre-el-hielo.html">El caballero sobre el hielo.</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Barra de vista progreso----------->
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!--Ficha de referencia----------->
+
+    <div id="ficha-ref">
+        <h3>Ficha del cuento</h3>
+        <div class="dato"><b>Año:</b> 1948</div>
+        <div class="dato"><b>Autor:</b> Edgar Allan Poe</div>
+        <div class="dato"><b>Personajes principales:</b> Montresor.</div>
+        <div class="dato"><b>Personajes secundarios:</b> Fortunato, Luchresi.</div>
+        <div class="dato"><b>Cita:</b> "El vino brillaba en los ojos de Fortunato, y las campanillas sonaban. El medoc me había calentado también un poco la cabeza; pero pronto llegamos, a través de montones de osamentas mezcladas con barriles y toneles, a las últimas profundidades de las catacumbas."</div>
+        <img class="dato" src="../img/Edgar-Allan-Poe.jpg" alt="Ilustración" width="100%">
+    </div>
+
+    <!--Contenedor------------------->
+
+    <div class="contenedor">
+        
+        <h2>La barrica del amontillado.</h2>
+        
+        <hr>
+        
+        <img src="../img/BarricaDelAmontillado.jpg">
+        
+        <p>Había tolerado cuanto me fue posible las mil injusticias de Fortunato; pero cuando se permitió el insulto, juré vengarme. Vosotros, que conocéis bien la naturaleza de mi alma, no supondréis, sin embargo, que esto fuese una simple amenaza; era preciso vengarme al fin, y estaba completamente decidido; pero la sinceridad misma de mi determinación excluía toda idea de peligro. Debía castigar, pero impunemente; una injuria no se lava cuando el castigo alcanza a quien la aplica, ni queda satisfecha si el vengador no tiene cuidado de darse a conocer al que infirió la injuria.</p>
+
+        <p>Conviene que todos sepan que yo no había dado el menor motivo a Fortunato para dudar de mi benevolencia, ni por mis palabras ni por mis actos; según mi costumbre, continué sonriendo cuando me hablaba, y no adivinó que mi sonrisa sólo revelaría en adelante la idea de mi venganza.</p>
+
+        <p>Fortunato tenía una debilidad, aunque fuese por todos conceptos un hombre respetable, y hasta temible: se vanagloriaba de ser muy inteligente en vinos. Pocos italianos poseen el verdadero espíritu investigador; su entusiasmo se manifiesta y adapta las más de las veces según el tiempo y la ocasión, y su charlatanismo resulta propio para influir en el ánimo de los millonarios ingleses y austriacos.</p>
+
+        <p>En cuanto a pinturas y piedras preciosas, Fortunato, así como sus compatriotas, era un charlatán; pero en materia de vinos rancios, no dejaba de ser entendido. Por este concepto, yo no difería esencialmente de él, pues conocía bien los de Italia, y compraba grandes cantidades cuando podía.</p>
+
+        <p>Cierto día de carnaval, al oscurecer, encontré a mi amigo, que se acercó a mí con la más afectuosa cordialidad, sin duda porque había bebido mucho. Mi hombre iba disfrazado; llevaba un traje ceñido, y la cabeza cubierta con un sombrero cónico guarnecido de campanillas. Me alegré mucho de verle, y creí que no acabaría nunca de estrecharme la mano.</p>
+
+        <p>-Querido Fortunato -le dije-, el encuentro es oportuno. ¡Qué buen semblante tiene usted hoy! Digo que me alegro de verle porque he recibido una pipa de amontillado, o por lo menos de un vino que me dan como tal, y tengo mis dudas.</p>
+
+        <p>-¿Una pipa de amontillado? -replicó mi amigo-. ¡No es posible! ¡En medio del carnaval!</p>
+
+        <p>-Tengo dudas -repuse- y he cometido la torpeza de pagar todo el valor sin consultar con usted antes. No le he podido encontrar, y he temido perder la ocasión de hacer la compra.</p>
+
+        <p>-¡Amontillado! -exclamó mi amigo.</p>
+
+        <p>-Repito que tengo mis dudas.</p>
+
+        <p>-¿Sobre si es amontillado?</p>
+
+        <p>-Sí, y quiero saber a qué atenerme.</p>
+
+        <p>-¿Respecto al amontillado?</p>
+
+        <p>-¡Sí, hombre! Y como sin duda le habrán hecho alguna invitación a usted, voy a buscar a Luchesi, pues si hay algún inteligente, seguramente es él. Luchesi me dirá…</p>
+
+        <p>-Luchesi es incapaz de distinguir entre el amontillado y el Jerez.</p>
+
+        <p>-Y, sin embargo, ese imbécil sostiene que es tan inteligente como usted.</p>
+
+        <p>-¡Vamos, vamos!</p>
+
+        <p>-¿Adónde?</p>
+
+        <p>-A su bodega.</p>
+
+        <p>-No, amigo, no quiero abusar de su bondad; veo que está usted convidado, y de consiguiente, Luchesi…</p>
+
+        <p>-No estoy convidado. ¡Vamos!</p>
+
+        <p>-No, amigo mío; no lo hago por la invitación, sino porque me parece que está usted padeciendo a causa del frío, y en la bodega hay mucha humedad; las paredes están cubiertas de nitro.</p>
+
+        <p>-No importa, vamos; el frío no vale nada. Es preciso ver ese amontillado; sin duda ha sido usted víctima de un engaño; y en cuanto a Luchesi, es incapaz de distinguirlo del Jerez.</p>
+
+        <p>Así diciendo, Fortunato me tomó del brazo; yo me puse una careta de seda negra, y embozándome en la capa, me dejé conducir hasta mi palacio.</p>
+
+        <p>Los criados no estaban en la casa; yo les había dicho que no volvería hasta por la mañana, dándoles formalmente la orden de no salir, lo cual bastaba, como yo sabía muy bien, para que todos marchasen apenas volviese la espalda.</p>
+
+        <p>Tomé dos candeleros, entregué uno a Fortunato y lo conduje con la mayor complacencia a través de varias habitaciones, hasta el vestíbulo por donde se bajaba a la bodega; comencé a franquear una larga y tortuosa escalera, y volvía a menudo la cabeza para recomendar a mi amigo que tuviese cuidado.</p>
+
+        <p>Al fin llegué a los últimos peldaños, y nos encontramos los dos en el suelo húmedo de las catacumbas de Montresors.</p>
+
+        <p>Mi amigo se tambaleaba, haciendo resonar a cada movimiento sus campanillas.</p>
+
+        <p>-¿Dónde está la pipa del amontillado? -me preguntó.</p>
+
+        <p>-Más lejos -contesté-; pero vea usted ese bordado blanco que brilla en las paredes.</p>
+
+        <p>Fortunato fijó en mí la mirada de sus ojos vidriosos, que destilaban las lágrimas de la embriaguez.</p>
+
+        <p>-¿El nitro? -preguntó al fin.</p>
+
+        <p>-Sí, el nitro -repuse-. ¿Cuánto tiempo hace que tiene usted esa tos?</p>
+
+        <p>Un nuevo acceso impidió a mi amigo contestar hasta que pasaron algunos minutos.</p>
+
+        <p>-No es nada -replicó al fin.</p>
+
+        <p>-Venga usted -le dije con firmeza-, vámonos de aquí, pues no quiero que se resienta su importante salud. Usted es rico y feliz, como yo lo fui en otro tiempo; se le respeta y se le ama, y su muerte dejaría un gran vacío. Yo no me hallo en el mismo caso. Vámonos de aquí, porque de lo contrario enfermaría usted. Por otra parte, tengo a Luchesi…</p>
+
+        <p>-Basta -replicó Fortunato-, la tos no es nada; el resfrío no me matará.</p>
+
+        <p>-Cierto, muy cierto -repuse-; verdaderamente, no tenía intención de alarmarle en vano; pero deberá usted adoptar precauciones. Un trago de este medoc le preservará a usted de la humedad.</p>
+
+        <p>Y tomando una botella entre las muchas de una prolongada serie alineada en el suelo, la destapé.</p>
+
+        <p>-Beba usted -dije a Fortunato, presentándole el vino.</p>
+
+        <p>Acercó la botella a sus labios, mirándome de reojo, me saludó familiarmente (las campanillas sonaron) y dijo:</p>
+
+        <p>-Brindo por los difuntos que reposan alrededor de nosotros.</p>
+
+        <p>-Y yo por la salud de usted, deseándole larga vida.</p>
+
+        <p>Mi amigo me tomó del brazo y seguimos adelante.</p>
+
+        <p>-Estas bodegas -me dijo- son muy vastas.</p>
+
+        <p>-Los Montresors -contesté- eran una noble y numerosa familia.</p>
+
+        <p>-No me acuerdo cómo es el escudo.</p>
+
+        <p>-Un pie de oro en campo azul; el pie aplasta una serpiente que se arrastra, y que ha clavado sus dientes en el talón.</p>
+
+        <p>-¿Y la divisa?</p>
+
+        <p>–Nemo me impune lacessit.</p>
+
+        <p>-Muy bien.</p>
+
+        <p>El vino brillaba en los ojos de Fortunato, y las campanillas sonaban. El medoc me había calentado también un poco la cabeza; pero pronto llegamos, a través de montones de osamentas mezcladas con barriles y toneles, a las últimas profundidades de las catacumbas. Me detuve de nuevo, y esta vez me tomé la libertad de agarrar por un brazo a mi amigo.</p>
+
+        <p>-El nitro aumenta -le dije-; vea usted cómo está suspendido de las bóvedas; nos hallamos en el lecho del río: las gotas de la humedad se filtran a través de las osamentas. ¡Vaya, vámonos antes que sea demasiado tarde! Esa tos…</p>
+
+        <p>-No es nada -contestó Fortunato-; sigamos adelante; pero, por lo pronto, venga otro trago de medoc.</p>
+
+        <p>Destapé un frasco de vino de Grave y se lo presenté; lo vació de un trago, y sus ojos brillaron como si fueran de fuego; comenzó a reír y arrojó la botella al aire con un ademán que no pude comprender.</p>
+
+        <p>Lo miré con sorpresa, y repitió el movimiento, que a la verdad era muy grotesco.</p>
+
+        <p>-¿No comprende usted? -me dijo.</p>
+
+        <p>-No -repliqué.</p>
+
+        <p>-Entonces no es usted de la logia.</p>
+
+        <p>-¿Cómo?</p>
+
+        <p>-No es usted masón.</p>
+
+        -¡Sí, sí -repuse-, eso sí!
+
+        <p>-¿Usted? ¡Imposible! ¿Usted masón?</p>
+
+        <p>-Sí, masón.</p>
+
+        <p>-Veamos; una señal.</p>
+
+        <p>-Mire usted -repliqué, sacando una paleta de albañil de entre los pliegues de mi capa.</p>
+
+        <p>-Usted se chancea -exclamó, retrocediendo algunos pasos­-; pero vamos a ver el amontillado.</p>
+
+        <p>-Sea -contesté, guardando el útil y ofreciendo el brazo a mi amigo.</p>
+
+        <p>Fortunato se apoyó con pesadez y continuamos nuestro camino en busca del amontillado.</p>
+
+        <p>Después de atravesar una serie de arcos muy bajos seguimos avanzando por una bajada, y al fin llegamos a una cripta profunda, donde la impureza del aire más bien enrojecía nuestras luces que las hacía brillar.</p>
+
+        <p>En el fondo de esa cripta se descubría otra, no menos espaciosa; sus paredes se habían revestido con restos humanos acumulados en los subterráneos que estaban situados sobre nosotros, a la manera de las grandes catacumbas de París. Tres lados de la cripta tenían aquel adorno; pero en el cuarto se habían arrancado los huesos, que yacían confusamente en el suelo y formaban en cierto sitio una especie de muro; en la pared desnuda, por la caída de los huesos, se veía un nicho de cuatro pies de profundidad, por tres de ancho y seis o siete de altura; al parecer no se había construido para ningún uso especial, constituyendo simplemente el intervalo entre dos de las enormes pilastras que sostenían la bóveda de las catacumbas, apoyándose en una de las paredes de granito macizo que limitaban el conjunto.</p>
+
+        <p>Inútilmente trató Fortunato de escudriñar la profundidad del nicho levantando su hacha, pues la luz, muy debilitada, no nos permitía ver la extremidad.</p>
+
+        <p>-Avance usted -dije a mi amigo-; allí está el amontillado. En cuanto a Luchesi…</p>
+
+        <p>-¡Es un ignorante! -interrumpió Fortunato, adelantándose un poco, mientras yo le seguía de cerca.</p>
+
+        <p>En un momento alcanzó la extremidad del nicho, y al ver que la roca le cerraba el paso, se detuvo con aire perplejo.</p>
+
+        <p>Un instante después lo tuve encadenado en la pared de granito, donde había dos grapones de hierro a la distancia de dos pies uno del otro, dispuestos en sentido horizontal; en uno de ellos se hallaba suspendida una cadena corta, y en la otra un candado; enlacé con aquélla la cintura de Fortunato, y pude sujetarle fácilmente, porque era tal su asombro, que no se resistió; después retiré la llave del candado y salí del nicho.</p>
+
+        <p>-Pase usted la mano por la pared -le dije-, pues no podrá menos de tocar el nitro. A decir verdad, está muy húmedo, y por eso “suplicaré” a usted una vez más que se vaya. ¿No quiere usted? Pues bien; será preciso marcharme, pero le dispensaré antes las atenciones que están a mi alcance.</p>
+
+        <p>-¡El amontillado! -exclamó mi amigo, sin poder salir aún de su asombro.</p>
+
+        <p>-Es verdad -repliqué-; el amontillado.</p>
+
+        <p>Al pronunciar estas palabras me acerqué al montón de osamentas de que ya he hablado, separé algunas de ellas y dejé en descubierto un buen número de ladrillos y mortero. Con estos materiales, y sirviéndome de mi paleta, comencé a tapiar la entrada del nicho.</p>
+
+        <p>Apenas colocaba la primera línea de ladrillos, reconocí que la embriaguez de Fortunato se disipaba en gran parte; el primer indicio que tuve fue un grito sordo; un gemido que salió del fondo del nicho, pero “no era el grito” de un hombre ebrio. Después lo siguió un silencio profundo; puse otras tres líneas de ladrillos; y entonces oí las furiosas vibraciones de la cadena; el ruido duró algunos minutos y durante ellos me agaché sobre las osamentas para deleitarme más, interrumpiendo mi trabajo.</p>
+
+        <p>Cuando el rumor cesó empuñé de nuevo mi paleta, y sin más interrupción coloqué la quinta línea de ladrillos, la sexta y la séptima; la pared llegaba entonces casi a la altura de mi pecho; me detuve un poco, y elevando la luz, dirigí algunos débiles rayos sobre mi amigo.</p>
+
+        <p>De pronto resonaron varios gritos agudos de la persona encadenada, y esto me hizo retroceder violentamente. Durante un instante vacilé, temblé; pero al fin, desenvainando mi espada, introduje la hoja a través de las aberturas del nicho. Un instante de reflexión bastó para tranquilizarme; puse la mano sobre la sólida pared de la cueva, me acerqué al muro y respondí a los alaridos de mi hombre con otros más ruidosos aún: de este modo conseguí hacerle callar.</p>
+
+        <p>Era entonces media noche, y mi obra tocaba a su fin; había completado ya la octava línea de ladrillos, la novena y la décima y una parte de la undécima y última, faltándome tan sólo ajustar una piedra.</p>
+
+        <p>La moví con trabajo, y la coloqué al fin en la posición deseada. En el mismo momento resonó en el nicho una carcajada ahogada que me puso los cabellos de punta, y a la cual siguió una voz triste que a duras penas reconocí como la de Fortunato.<p>
+
+                <p>-¡Ah, ah! -exclamaba-. ¡No es mala broma! ¡Buena jugarreta! ¡Cómo nos reiremos en el palacio, ja, ja, de nuestro buen vino!</p>
+
+                <p>-¡Del amontillado! -dije yo.</p>
+
+                <p>-¡Ja, ja! Sí, del amontillado. Pero ya es tarde. ¿No nos esperan en el palacio la señora Fortunato y los demás? Vámonos.</p>
+
+                <p>-Sí -repuse-, vámonos.</p>
+
+                <p>-”¡Por amor de Dios, Montresor!”</p>
+
+                <p>-Sí -dije-, por amor de Dios.</p>
+
+                <p>Estas palabras quedaron sin contestación; en vano apliqué el oído, e impaciente ya, grité con fuerza:</p>
+
+                <p>-¡Fortunato!</p>
+
+                <p>Nada. Introduje mi luz a través de la abertura que había quedado y la dejé caer dentro. Sólo me contestó un ruido de campanillas que me hizo daño en el corazón, sin duda a causa de la humedad de las catacumbas. Me apresuré a poner término a mi obra, hice un esfuerzo, ajusté la última piedra y la cubrí de mortero, levantando después la antigua pared de osamentas para tapar la nueva mampostería. Desde hace medio siglo ningún mortal las ha tocado. In pace requiescat.</p>
+    </div>
+
+    <!--Boton de ir hacia arriba------>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Ir arriba</button>
+    
+    <!--Video------>
+    
+        <video id="ytb-vid" src="../vids/Edgar-Allan-Poe.mp4" controls></video>
+
+    <!--Pie de página----------------->
+
+    <div class="piedepag">
+        <p>Cuentos para leer en una tarde lluviosa es una marca registrada bajo las respectivas leyes de propiedad intelectual</p>
+        <p>Puebla, México 2019 (Todos los derechos reservados)</p>
+    </div>
+
+</body></html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cuentos</title>
+    <link rel="stylesheet" href="../css/cuentos.css">
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+            myFunction()
+        };
+
+        // Función para vista de progreso de barra
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+        // Funciones para boton de ir hacia arriba
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <!--Encabezado-------------------->
+
+    <div id="header">
+        <img src="../Logo/Cuentos-para-leer-en-una-tarde-lluviosa-LOGO.svg">
+    </div>
+
+    <!--Barra de navegación----------->
+
+    <div class="navbar">
+        <a class="inicio" href="../html/index.html">Inicio</a>
+        <div class="dropdown">
+            <button class="dropbtn"> Cuentos <img src="../img/Flecha.svg" style="width:10px"></button>
+            <div class="dropdown-content">
+                <a href="../html/La-cuesta-de-las-comadres.html">La cuesta de las comadres.</a>
+                <a href="../html/La-barrica-del-amontillado.html">La barrica del amontillado.</a>
+                <a href="../html/El-almohadon-de-plumas.html">El almohadón de plumas.</a>
+                <a href="../html/Un-dia-perfecto-para-el-pez-platano.html">Un día perfecto para el pez plátano.</a>
+                <a href="../html/El-caballero-sobre-el-hielo.html">El caballero sobre el hielo.</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Barra de vista progreso----------->
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <!--Ficha de referencia----------->
+
+    <div id="ficha-ref">
+        <h3>Ficha del cuento</h3>
+        <div class="dato"><b>Año: 1953</b> </div>
+        <div class="dato"><b>Autor:</b> J.D. Sallinger</div>
+        <div class="dato"><b>Personajes principales:</b> Muriel Glass, Seymour, Sybil Carpenter, señora Carpenter. </div>
+        <div class="dato"><b>Personajes secundarios:</b> Mamá de Muriel, papá de Muriel, doctor Sivetski, Sharon Lipschutz.</div>
+        <div class="dato"><b>Cita:</b> "Cuando estuvo libre, Sybil echó a correr inmediatamente por el borde firme de la playa hacia el Pabellón de los Pescadores. Se detuvo únicamente para hundir un pie en un castillo de arena inundado y derruido, y en seguida dejó atrás la zona reservada a los clientes del hotel."</div>
+        <img class="dato" src="../img/JD-Salinger.jpg" alt="Ilustración" width="100%">
+    </div>
+
+    <!--Contenedor------------------->
+
+    <div class="contenedor">
+
+        <h2>Un día perfecto para el pez plátano.</h2>
+        <hr>
+        <img src="../img/Pez-platano.jpg">
+
+        <p>En el hotel había noventa y siete agentes de publicidad neoyorquinos. Como monopolizaban las líneas telefónicas de larga distancia, la chica del 507 tuvo que esperar su llamada desde el mediodía hasta las dos y media de la tarde. Pero no perdió el tiempo. En una revista femenina leyó un artículo titulado «El sexo es divertido o infernal». Lavó su peine y su cepillo. Quitó una mancha de la falda de su traje beige. Corrió un poco el botón de la blusa de Saks. Se arrancó los dos pelos que acababan de salirle en el lunar. Cuando, por fin, la operadora la llamó, estaba sentada en el alféizar de la ventana y casi había terminado de pintarse las uñas de la mano izquierda.</p>
+        <p>No era una chica a la que una llamada telefónica le produjera gran efecto. Se comportaba como si el teléfono hubiera estado sonando constantemente desde que alcanzó la pubertad.</p>
+        <p>Mientras sonaba el teléfono, con el pincelito del esmalte se repasó una uña del dedo meñique, acentuando el borde de la lúnula. Tapó el frasco y, poniéndose de pie, abanicó en el aire su mano pintada, la izquierda. Con la mano seca, tomó del alféizar un cenicero repleto y lo llevó hasta la mesita de noche, donde estaba el teléfono. Se sentó en una de las dos camas gemelas ya hecha y—ya era la cuarta o quinta llamada—levantó el auricular del teléfono.</p>
+        <p>—Diga—dijo, manteniendo extendidos los dedos de la mano izquierda lejos de la bata de seda blanca, que era lo único que llevaba puesto, junto con las chinelas: los anillos estaban en el cuarto de baño.</p>
+        <p> —Su llamada a Nueva York, señora Glass—dijo la operadora.</p>
+        <p>—Gracias—contestó la chica, e hizo sitio en la mesita de noche para el cenicero.</p>
+        <p>A través del auricular llegó una voz de mujer:</p>
+        <p>—¿Muriel? ¿Eres tú?</p>
+        <p>La chica alejó un poco el auricular del oído.</p>
+        <p>—Sí, mamá. ¿Cómo estás?—dijo.</p>
+        <p>—He estado preocupadísima por ti. ¿Por qué no has llamado? ¿Estás bien?</p>
+        <p>—Traté de telefonear anoche y anteanoche. Los teléfonos aquí han...</p>
+        <p>—¿Estás bien, Muriel?</p>
+        <p>La chica separó un poco más el auricular de su oreja.</p>
+        <p>—Estoy perfectamente. Hace mucho calor. Este es el día más caluroso que ha habido en Florida desde...</p>
+        <p>—¿Por qué no has llamado antes? He estado tan preocupada...</p>
+        <p>—Mamá, querida, no me grites. Te oigo perfectamente —dijo la chica—. Anoche te llamé dos veces. Una vez justo después...</p>
+        <p>—Le dije a tu padre que seguramente llamarías anoche. Pero no, él tenía que... ¿estás bien, Muriel? Dime la verdad.</p>
+        <p>—Estoy perfectamente. Por favor, no me preguntes siempre lo mismo.</p>
+        <p>—¿Cuándo llegasteis?</p>
+        <p>—No sé... el miércoles, de madrugada.</p>
+        <p>—¿Quién condujo?</p>
+        <p>—Él—dijo la chica—. Y no te asustes. Condujo bien. Yo misma estaba asombrada.</p>
+        <p>—¿Condujo él? Muriel, me diste tu palabra de que...</p>
+        <p>—Mamá—interrumpió la chica—, acabo de decírtelo. Condujo perfectamente.</p>
+        <p>No pasamos de ochenta en todo el trayecto, ésa es la verdad.</p>
+        <p>—¿No trató de hacer el tonto otra vez con los árboles?</p>
+        <p>—Vuelvo a repetirte que condujo muy bien, mamá. Vamos, por favor. Le pedí que se mantuviera cerca de la línea blanca del centro, y todo lo demás, y entendió perfectamente, y lo hizo. Hasta se esforzaba por no mirar los árboles... se notaba. Por cierto, ¿papá ha<br /> hecho arreglar el coche?</p>
+        <p>—Todavía no. Es que piden cuatrocientos dólares, sólo para...</p>
+        <p>—Mamá, Seymour le dijo a papá que pagaría él. Así que no hay motivo para...</p>
+        <p>—Bueno, ya veremos. ¿Cómo se portó? Digo, en el coche y demás...</p>
+        <p>—Muy bien—dijo la chica.</p>
+        <p>—¿Sigue llamándote con ese horroroso...?</p>
+        <p>—No. Ahora tiene uno nuevo.</p>
+        <p>—¿Cuál?<br /> —Mamá... ¿qué importancia tiene?</p>
+        <p>—Muriel, insisto en saberlo. Tu padre...</p>
+        <p>—Está bien, está bien. Me llama Miss Buscona Espiritual 1948—dijo la chica, con una risita.</p>
+        <p>—No tiene nada de gracioso, Muriel. Nada de gracioso. Es horrible. Realmente, es triste. Cuando pienso cómo...</p>
+        <p>—Mamá—interrumpió la chica—, escúchame. ¿Te acuerdas de aquel libro que me mandó de Alemania? Unos poemas en alemán. ¿Qué hice con él? Me he estado rompiendo la cabeza...</p>
+        <p>—Lo tienes tú.</p>
+        <p>—¿Estás segura?—dijo la chica.</p>
+        <p>—Por supuesto. Es decir, lo tengo yo. Está en el cuarto de Freddy. Lo dejaste aquí y no había sitio en la... ¿Por qué? ¿Te lo ha pedido él?</p>
+        <p>—No. Simplemente me preguntó por él, cuando veníamos en el coche. Me preguntó si lo había leído.</p>
+        <p>—¡Pero está en alemán!</p>
+        <p>—Sí, mamita. Ese detalle no tiene importancia—dijo la chica, cruzando las piernas—. Dijo que casualmente los poemas habían sido escritos por el único gran poeta de este siglo. Me dijo que debería haber comprado una traducción o algo así. O aprendido el idioma... nada menos...</p>
+        <p>—Espantoso. Espantoso. Es realmente triste... Ya decía tu padre anoche...</p>
+        <p>—Un segundo, mamá—dijo la chica. Se acercó hasta el alféizar en busca de cigarrillos, encendió uno y volvió a sentarse en la cama—. ¿Mamá?—dijo, echando una bocanada de humo.</p>
+        <p>—Muriel, mira, escúchame.</p>
+        <p>—Te estoy escuchando.</p>
+        <p>—Tu padre habló con el doctor Sivetski.</p>
+        <p>—¿Sí?—dijo la chica.</p>
+        <p>—Le contó todo. Por lo menos, eso me dijo, ya sabes cómo es tu padre. Los árboles. Ese asunto de la ventana. Las cosas horribles que le dijo a la abuela acerca de sus proyectos sobre la muerte. Lo que hizo con esas fotos tan bonitas de las Bermudas... ¡Todo!</p>
+        <p>—¿Y...?—dijo la chica.</p>
+        <p>—En primer lugar, dijo que era un verdadero crimen que el ejército lo hubiera dado de alta del hospital. Palabra. En definitiva, dijo a tu padre que hay una posibilidad, una posibilidad muy grande, dijo, de que Seymour pierda por completo la razón. Te lo juro.</p>
+        <p>—Aquí, en el hotel, hay un psiquiatra —dijo la chica.</p>
+        <p>—¿Quién? ¿Cómo se llama?</p>
+        <p>—No sé. Rieser o algo así. Dicen que es un psiquiatra muy bueno.</p>
+        <p>—Nunca lo he oído nombrar.</p>
+        <p>—De todos modos, dicen que es muy bueno.</p>
+        <p>—Muriel, por favor, no seas inconsciente. Estamos muy preocupados por ti. Lo cierto es que... anoche tu padre estuvo a punto de enviarte un telegrama para que volvieras inmediatamente a casa...</p>
+        <p>—Por ahora no pienso volver, mamá. Así que tómalo con calma.</p>
+        <p>—Muriel, te doy mi palabra. El doctor Sivetski ha dicho que Seymour podía perder por completo la...</p>
+        <p>—Mamá, acabo de llegar. Hace años que no me tomo vacaciones, y no pienso meter todo en la maleta y volver a casa porque sí—dijo la chica—. Por otra parte, ahora no podría viajar. Estoy tan quemada por el sol que ni me puedo mover.</p>
+        <p>—¿Te has quemado mucho? ¿No has usado ese bronceador que te puse en la maleta? Está...</p>
+        <p>—Lo usé. Pero me quemé lo mismo.</p>
+        <p>—¡Qué horror! ¿Dónde te has quemado?</p>
+        <p>—Me he quemado toda, mamá, toda.</p>
+        <p>—¡Qué horror!</p>
+        <p>—No me voy a morir.</p>
+        <p>—Dime, ¿has hablado con ese psiquiatra?</p>
+        <p>—Bueno... sí... más o menos...—dijo la chica.</p>
+        <p>—¿Qué dijo? ¿Dónde estaba Seymour cuando le hablaste?</p>
+        <p>—En la Sala Océano, tocando el piano. Ha tocado el piano las dos noches que hemos pasado aquí.</p>
+        <p>—Bueno, ¿qué dijo?</p>
+        <p>—¡Oh, no mucho! ¡Él fue el primero en hablar. Yo estaba sentada anoche a su lado, jugando albingo, y me preguntó si el que tocaba el piano en la otra sala era mi marido. Le dije que sí, y me preguntó si Seymour había estado enfermo o algo por el estilo. Entonces yo le dije...</p>
+        <p>—¿Por qué te hizo esa pregunta?</p>
+        <p>—No sé, mamá. Tal vez porque lo vio tan pálido, y yo qué sé—dijo la chica—. La cuestión es que, después de jugar al bingo, él y su mujer me invitaron a tomar una copa. Y yo acepté. La mujer es espantosa. ¿Te acuerdas de aquel vestido de noche tan horrible que vimos en el escaparate de Bonwit? Aquel vestido que tú dijiste que para llevarlo había que tener un pequeño, pequeñísimo...</p>
+        <p>—¿El verde?</p>
+        <p>—Lo llevaba puesto. ¡Con unas cadenas...! Se pasó el rato preguntándome si Seymour era pariente de esa Suzanne Glass que tiene una tienda en la avenida Madison... la mercería...</p>
+        <p>—Pero ¿qué dijo él? El médico.</p>
+        <p>—Ah, sí... Bueno... en realidad, no dijo mucho. Sabes, estábamos en el bar. Había mucho barullo.</p>
+        <p>—Sí, pero... ¿le... le dijiste lo que trató de hacer con el sillón de la abuela?</p>
+        <p>—No, mamá. No entré en detalles—dijo la chica—. Seguramente podré hablar con él de nuevo. Se pasa todo el día en el bar.</p>
+        <p>—¿No dijo si había alguna posibilidad de que pudiera ponerse... ya sabes, raro, o algo así...? ¿De que pudiera hacerte algo...?</p>
+        <p>—En realidad, no—dijo la chica—. Necesita conocer más detalles, mamá. Tienen que saber todo sobre la infancia de uno... todas esas cosas. Ya te digo, había tanto ruido que apenas podíamos hablar.</p>
+        <p>—En fin. ¿Y tu abrigo azul?</p>
+        <p>—Bien. Le subí un poco las hombreras.</p>
+        <p>—¿Cómo es la ropa este año?</p>
+        <p>—Terrible. Pero preciosa. Con lentejuelas por todos lados.<br /> —¿Y tu habitación?</p>
+        <p>—Está bien. Pero nada más que eso. No pudimos conseguir la habitación que nos daban antes de la guerra—dijo la chica—. Este año la gente es espantosa. Tendrías que ver a los que se sientan al lado nuestro en el comedor. Parece que hubieran venido en un camión.</p>
+        <p> —Bueno, en todas partes es igual. ¿Y tu vestido de baile?</p>
+        <p>—Demasiado largo. Te dije que era demasiado largo.</p>
+        <p>—Muriel, te lo voy a preguntar una vez más... ¿En serio, va todo bien?</p>
+        <p>—Sí, mamá—dijo la chica—. Por enésima vez.</p>
+        <p>—¿Y no quieres volver a casa?</p>
+        <p>—No, mamá.</p>
+        <p>—Tu padre dijo anoche que estaría encantado de pagarte el viaje si quisieras irte sola a algún lado y pensarlo bien. Podrías hacer un hermoso crucero. Los dos pensamos...</p>
+        <p>—No, gracias—dijo la chica, y descruzó las piernas—.<br /> —Mamá, esta llamada va a costar una for...</p>
+        <p>—Cuando pienso cómo estuviste esperando a ese muchacho durante toda la guerra... quiero decir, cuando unapiensa en esas esposas alocadas que...</p>
+        <p>—Mamá—dijo la chica—. Colguemos. Seymour puede llegar en cualquier momento.</p>
+        <p>—¿Dónde está?</p>
+        <p>—En la playa.</p>
+        <p>—¿En la playa? ¿Solo? ¿Se porta bien en la playa?</p>
+        <p>—Mamá—dijo la chica—. Hablas de él como si fuera un loco furioso.</p>
+        <p>—No he dicho nada de eso, Muriel.</p>
+        <p>—Bueno, ésa es la impresión que das. Mira, todo lo que hace es estar tendido en la arena. Ni siquiera se quita el albornoz.</p>
+        <p>—¿Que no se quita el albornoz? ¿Por qué no?</p>
+        <p>—No lo sé. Tal vez porque tiene la piel tan blanca.</p>
+        <p>—Dios mío, necesita tomar sol. ¿Por qué no lo obligas?</p>
+        <p>—Lo conoces muy bien—dijo la chica, y volvió a cruzar las piernas—. Dice que no quiere tener un montón de imbéciles alrededor mirándole el tatuaje.</p>
+        <p>—¡Si no tiene ningún tatuaje! ¿O acaso se hizo tatuar cuando estaba en la guerra?</p>
+        <p>—No, mamá. No, querida—dijo la chica, y se puso de pie—. Escúchame, a lo mejor te llamo otra vez mañana.</p>
+        <p>—Muriel, hazme caso.</p>
+        <p>—Sí, mamá—dijo la chica, cargando su peso sobre la pierna derecha.</p>
+        <p>—Llámame en cuanto haga, o diga, algo raro... ya me entiendes. ¿Me oyes?</p>
+        <p>—Mamá, no le tengo miedo a Seymour.</p>
+        <p>—Muriel, quiero que me lo prometas.</p>
+        <p>—Bueno, te lo prometo. Adiós, mamá—dijo la chica—. Besos a papá—y colgó.</p>
+        <p> —Ver más vidrio—dijo Sybil Carpenter, que estaba alojada en el hotel con su madre—. ¿Has visto más vidrio?</p>
+        <p>—Cariño, por favor, no sigas repitiendo eso. Vas a volver loca a mamaíta. Estate quieta, por favor.</p>
+        <p>La señora Carpenter untaba la espalda de Sybil con bronceador, repartiéndolo sobre sus omóplatos, delicados como alas. Sybil estaba precariamente sentada sobre una enorme y tensa pelota de playa, mirando el océano. Llevaba un traje de baño de color amarillo canario, de dos piezas, una de las cuales en realidad no necesitaría hasta dentro de nueve o diez años.</p>
+        <p>—No era más que un simple pañuelo de seda... una podía darse cuenta cuando se acercaba a mirarlo—dijo la mujer sentada en la hamaca contigua a la de la señora Carpenter—. Ojalá supiera cómo lo anudó. Era una preciosidad.</p>
+        <p>—Por lo que dice, debía de ser precioso—asintió la señora Carpenter.</p>
+        <p>—Estáte quieta, Sybil, cariño...</p>
+        <p>—¿Viste más vidrio?—dijo Sybil.</p>
+        <p>La señora Carpenter suspiró.</p>
+        <p>—Muy bien—dijo. Tapó el frasco de bronceador—. Ahora vete a jugar, cariño. Mamaíta va a ir al hotel a tomar un martini con la señora Hubbel. Te traeré la aceituna.</p>
+        <p>Cuando estuvo libre, Sybil echó a correr inmediatamente por el borde firme de la playa hacia el Pabellón de los Pescadores. Se detuvo únicamente para hundir un pie en un castillo de arena inundado y derruido, y en seguida dejó atrás la zona reservada a los clientes del hotel.</p>
+        <p>Caminó cerca de medio kilómetro y de pronto echó a correr oblicuamente, alejándose del agua hacia la arena blanda. Se detuvo al llegar junto a un hombre joven que estaba echado de espaldas.</p>
+        <p>—¿Vas a ir al agua, ver más vidrio?—dijo.</p>
+        <p>El joven se sobresaltó, llevándose instintivamente la mano derecha a las solapas del albornoz. Se volvió boca abajo, dejando caer una toalla enrollada como una salchicha que tenía sobre los ojos, y miró de reojo a Sybil.</p>
+        <p>—¡Ah!, hola, Sybil.</p>
+        <p>—¿Vas a ir al agua?</p>
+        <p>—Te esperaba—dijo el joven—. ¿Qué hay de nuevo?</p>
+        <p>—¿Qué?—dijo Sybil.</p>
+        <p>—¿Qué hay de nuevo? ¿Qué programa tenemos?</p>
+        <p>—Mi papá llega mañana en un avión—dijo Sybil, tirándole arena con el pie.</p>
+        <p>—No me tires arena a la cara, niña—dijo el joven, cogiendo con una mano el tobillo de Sybil—. Bueno, ya era hora de que tu papi llegara. Lo he estado esperando horas. Horas.</p>
+        <p>—¿Dónde está la señora?—dijo Sybil.</p>
+        <p>—¿La señora?—el joven hizo un movimiento, sacudiéndose la arena del pelo ralo—. Es difícil saberlo, Sybil. Puede estar en miles de lugares. En la peluquería. Tiñiéndose el pelo de color visón. O en su habitación, haciendo muñecos para los niños pobres.</p>
+        <p>Se puso boca abajo, cerró los dos puños, apoyó uno encima del otro y acomodó el mentón sobre el de arriba.</p>
+        <p>—Pregúntame algo más, Sybil—dijo—. Llevas un bañador muy bonito. Si hay algo que me gusta, es un bañador azul.</p>
+        <p>Sybil lo miró asombrada y después contempló su prominente barriga.</p>
+        <p>—Es amarillo—dijo—. Es amarillo.</p>
+        <p>—¿En serio? Acércate un poco más.</p>
+        <p>Sybil dio un paso adelante.</p>
+        <p>—Tienes toda la razón del mundo. Qué tonto soy.</p>
+        <p>—¿Vas a ir al agua?—dijo Sybil.</p>
+        <p>—Lo estoy considerando seriamente, Sybil. Lo estoy pensando muy en serio.<br /> Sybil hundió los dedos en el flotador de goma que el joven usaba a veces como almohadón.</p>
+        <p>—Necesita aire—dijo.</p>
+        <p>—Es verdad. Necesita más aire del que estoy dispuesto a admitir—retiró los puños y dejó que el mentón descansara en la arena—. Sybil—dijo—, estás muy guapa. Da gusto verte. Cuéntame algo de ti—estiró los brazos hacia delante y tomó en sus manos los dos tobillos de Sybil—. Yo soy capricornio. ¿Cuál es tu signo?</p>
+        <p>—Sharon Lipschutz dijo que la dejaste sentarse a tu lado en el taburete del piano—dijo Sybil.</p>
+        <p>—¿Sharon Lipschutz dijo eso?</p>
+        <p>Sybil asintió enérgicamente. Le soltó los tobillos, encogió los brazos y apoyó la mejilla en el antebrazo derecho.</p>
+        <p>—Bueno —dijo—. Tú sabes cómo son estas cosas, Sybil. Yo estaba sentado ahí, tocando. Y tú te habías perdido de vista totalmente y vino Sharon Lipschutz y se sentó a mi lado. No podía echarla de un empujón, ¿no es cierto?</p>
+        <p>—Sí que podías.</p>
+        <p>—Ah, no. No era posible. Pero ¿sabes lo que hice?</p>
+        <p>—¿Qué?</p>
+        <p>—Me imaginé que eras tú.</p>
+        <p>Sybil se agachó y empezó a cavar en la arena.</p>
+        <p>—Vayamos al agua—dijo.</p>
+        <p>—Bueno—replicó el joven—. Creo que puedo hacerlo.</p>
+        <p>—La próxima vez, échala de un empujón —dijo Sybil.</p>
+        <p>—¿Que eche a quién?</p>
+        <p>—A Sharon Lipschutz.</p>
+        <p>—Ah, Sharon Lipschutz —dijo él—. ¡Siempre ese nombre! Mezcla de recuerdos y deseos.—De repente se puso de pie y miró el mar—. Sybil—dijo—, ya sé lo que podemos hacer. Intentaremos pescar un pez plátano.</p>
+        <p>—¿Un qué?</p>
+        <p>—Un pez plátano—dijo, y desanudó el cinturón de su albornoz.</p>
+        <p>Se lo quitó. Tenía los hombros blancos y estrechos. El traje de baño era azul eléctrico. Plegó el albornoz, primero a lo largo y después en tres dobleces. Desenrolló la toalla que se había puesto sobre los ojos, la tendió sobre la arena y puso encima el albornoz plegado. Se agachó, recogió el flotador y se lo puso bajo el brazo derecho. Luego, con la mano izquierda, tomó la de Sybil.</p>
+        <p>Los dos echaron a andar hacia el mar.</p>
+        <p>—Me imagino que ya habrás visto unos cuantos peces plátano—dijo el joven.</p>
+        <p>Sybil negó con la cabeza.</p>
+        <p>—¿En serio que no? Pero, ¿dónde vives, entonces?</p>
+        <p>—No sé—dijo Sybil.</p>
+        <p>—Claro que lo sabes. Tienes que saberlo. Sharon Lipschutz sabe dónde vive, y sólo tiene tres años y medio.</p>
+        <p>Sybil se detuvo y de un tirón soltó su mano de la de él. Recogió una concha y la observó con estudiado interés. Luego la tiró.</p>
+        <p>—Whirly Wood, Connecticut—dijo, y echó nuevamente a andar, sacando la barriga.</p>
+        <p>—Whirly Wood, Connecticut—dijo el joven—. ¿Eso, por casualidad, no está cerca de Whirly Wood, Connecticut?</p>
+        <p>Sybil lo miró:</p>
+        <p>—Ahí es donde vivo—dijo con impaciencia—. Vivo en Whirly Wood, Connecticut.</p>
+        <p>Se adelantó unos pasos, se cogió el pie izquierdo con la mano izquierda y dio dos o tres saltos.</p>
+        <p>—No puedes imaginarte cómo lo aclara todo eso —dijo él.<br /> Sybil soltó el pie:</p>
+        <p>—¿Has leído El negrito Sambo?—dijo.</p>
+        <p>—Es gracioso que me preguntes eso—dijo él—. Da la casualidad que acabé de leerlo anoche.—Se inclinó y volvió a tomar la mano de Sybil—. ¿Qué te pareció?</p>
+        <p>—¿Te acuerdas de los tigres que corrían todos alrededor de ese árbol?</p>
+        <p>—Creí que nunca iban a parar. Jamás vi tantos tigres.</p>
+        <p>—No eran más que seis—dijo Sybil.</p>
+        <p>—¡Nada más que seis! —dijo el joven—. ¿Y dices «nada más»?</p>
+        <p>—¿Te gusta la cera?—preguntó Sybil.</p>
+        <p>—¿Si me gusta qué?</p>
+        <p>—La cera.</p>
+        <p>—Mucho. ¿A ti no?</p>
+        <p>Sybil asintió con la cabeza:</p>
+        <p>—¿Te gustan las aceitunas?—preguntó.</p>
+        <p>—¿Las aceitunas?... Sí. Las aceitunas y la cera. Nunca voy a ningún lado sin ellas.</p>
+        <p>—¿Te gusta Sharon Lipschutz?—preguntó Sybil.</p>
+        <p>—Sí. Sí me gusta. Lo que más me gusta de ella es que nunca hace cosas feas a los perritos en la sala del hotel. Por ejemplo, a ese bulldog enano de la señora canadiense. Te resultará difícil creerlo, pero hay algunas niñas que se divierten mucho pinchándolo con los palitos de los globos. Pero Sharon, jamás. Nunca es mala ni grosera. Por eso la quiero tanto.</p>
+        <p>Sybil no dijo nada.</p>
+        <p>—Me gusta masticar velas—dijo ella por último.</p>
+        <p>—Ah, ¿y a quién no?—dijo el joven mojándose los pies—. ¡Diablos, qué fría está!—Dejó caer el flotador en el agua—. No, espera un segundo, Sybil. Espera a que estemos un poquito más adentro.</p>
+        <p>Avanzaron hasta que el agua llegó a la cintura de Sybil. Entonces el joven la levantó y la puso boca abajo en el flotador.</p>
+        <p>—¿Nunca usas gorro de baño ni nada de eso?—preguntó él.</p>
+        <p>—No me sueltes—dijo Sybil—. Sujétame, ¿quieres?</p>
+        <p>—Señorita Carpenter, por favor. Yo sé lo que estoy haciendo—dijo el joven—. Ocúpate sólo de ver si aparece un pez plátano. Hoy es un día perfecto para los peces plátano.</p>
+        <p>—No veo ninguno—dijo Sybil.</p>
+        <p>—Es muy posible. Sus costumbres son muy curiosas. Muy curiosas.<br /> Siguió empuiando el flotador. El agua le llegaba al pecho.<br /> —Llevan una vida triste—dijo—. ¿Sabes lo que hacen, Sybil?</p>
+        <p>Ella negó con la cabeza.</p>
+        <p>—Bueno, te lo explicaré. Entran en un pozo que está lleno de plátanos. Cuando entran, parecen peces como todos los demás. Pero, una vez dentro, se portan como cerdos, ¿sabes? He oído hablar de peces plátano que han entrado nadando en pozos de plátanos y llegaron a comer setenta y ocho plátanos—empujó al flotador y a su pasajera treinta centímetros más hacia el horizonte—. Claro, después de eso engordan tanto que ya no pueden salir. No pasan por la puerta.</p>
+        <p>—No vayamos tan lejos—dijo Sybil—. ¿Y qué pasa despues con ellos?</p>
+        <p>—¿Qué pasa con quiénes?</p>
+        <p>—Con los peces plátano.</p>
+        <p>—Bueno, ¿te refieres a después de comer tantos plátanos que no pueden salir del pozo?</p>
+        <p>—Sí—dijo Sybil.</p>
+        <p>—Mira, lamento decírtelo, Sybil. Se mueren.</p>
+        <p>—¿Por qué?—preguntó Sybil.</p>
+        <p>—Contraen fiebre platanífera. Una enfermedad terrible.</p>
+        <p>—Ahí viene una ola—dijo Sybil nerviosa.</p>
+        <p>—No le haremos caso. La mataremos con la indiferencia—dijo el joven—, como dos engreídos.</p>
+        <p>Tomó los tobillos de Sybil con ambas manos y empujó hacia delante. El flotador levantó la proa por encima de la ola. El agua empapó los cabellos rubios de Sybil, pero sus gritos eran de puro placer.</p>
+        <p>Cuando el flotador estuvo nuevamente inmóvil, se apartó de los ojos un mechón de pelo pegado, húmedo, y comentó:</p>
+        <p>—Acabo de ver uno.</p>
+        <p>—¿Un qué, amor mío?</p>
+        <p>—Un pez plátano.</p>
+        <p>—¡No, por Dios!—dijo el joven—. ¿Tenía algún plátano en la boca?<br /> —Sí—dijo Sybil—. Seis.</p>
+        <p>De pronto, el joven tomó uno de los mojados pies de Sybil que colgaban por el borde del flotador y le besó la planta.</p>
+        <p>—¡Eh!—dijo la propietaria del pie, volviéndose.</p>
+        <p>—¿Cómo, eh? Ahora volvamos. ¿Ya te has divertido bastante?</p>
+        <p>—¡No!</p>
+        <p>—Lo siento—dijo, y empujó el flotador hacia la playa hasta que Sybil descendió.</p>
+        <p>El resto del carnino lo llevó bajo el brazo.</p>
+        <p>—Adiós —dijo Sybil, y salió corriendo hacia el hotel.</p>
+        <p>El joven se puso el albornoz, cruzó bien las solapas y metió la toalla en el bolsillo. Recogió el flotador mojado y resbaladizo y se lo acomodó bajo el brazo. Caminó solo, trabajosamente, por la arena caliente, blanda, hasta el hotel.</p>
+        <p>En el primer nivel de la planta baja del hotel—que los bañistas debían usar según instrucciones de la gerencia— entró con él en el ascensor una mujer con la nariz cubierta de pomada.</p>
+        <p>—Veo que me está mirando los pies—dijo él, cuando el ascensor se puso en marcha.</p>
+        <p>—¿Cómo dice?—dijo la mujer.</p>
+        <p>—Dije que veo que me está mirando los pies.</p>
+        <p>—Perdone, pero casualmente estaba mirando el suelo —dijo la muier, y se volvió hacia las puertas del ascensor.</p>
+        <p>—Si quiere mirarme los pies, dígalo—dijo el joven—. Pero, maldita sea, no trate de hacerlo con tanto disimulo.</p>
+        <p>—Déjeme salir, por favor—dijo rápidamente la mujer a la ascensorista.</p>
+        <p>Cuando se abrieron las puertas, la mujer salió sin mirar hacia atrás.</p>
+        <p>—Tengo los pies completamente normales y no veo por qué demonios tienen que mirármelos—dijo el joven—. Quinto piso, por favor.</p>
+        <p>Sacó la llave de la habitación del bolsillo de su albornoz.</p>
+        <p>Bajó en el quinto piso, caminó por el pasillo y abrió la puerta del 507. La habitación olía a maletas nuevas de piel de ternera y a quitaesmalte de uñas.</p>
+        <p>Echó una ojeada a la chica que dormía en una de las camas gemelas. Después fue hasta una de las maletas, la abrió y extrajo una automática de debajo de un montón de calzoncillos y camisetas, una Ortgies calibre 7,65. Sacó el cargador, lo examinó y volvió a colocarlo. Quitó el seguro.</p>
+        <p>Después se sentó en la cama desocupada, miró a la chica, apuntó con la pistola y se disparó un tiro en la sien derecha.</p>
+    </div>
+
+    <!--Boton de ir hacia arriba------>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Ir arriba</button>
+
+    <!--Video------>
+
+    <video id="ytb-vid" src="../vids/Juan-Rulfo.mp4" controls></video>
+
+    <!--Pie de página----------------->
+
+    <div class="piedepag">
+        <p>Cuentos para leer en una tarde lluviosa es una marca registrada bajo las respectivas leyes de propiedad intelectual</p>
+        <p>Puebla, México 2019 (Todos los derechos reservados)</p>
+    </div>
+
+</body>
+
+</html>
